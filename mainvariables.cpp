@@ -21,6 +21,9 @@ int main(int argc, char *argv[]) {
         result = firstnumber - secondnumber;
         printf("%d - %d = %d\n",firstnumber,secondnumber, result);
 
+    }else if (strcmp(operation, "multiply") == 0) {
+        result = firstnumber * secondnumber;
+        printf("%d * %d = %d\n",firstnumber,secondnumber, result);
     }
     return 0;
 }
