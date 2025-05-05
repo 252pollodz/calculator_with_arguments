@@ -14,6 +14,9 @@ int main(int argc, char *argv[]) {
     firstnumber = atoi(argv[1]);
     secondnumber = atoi(argv[3]);
     operation = argv[2];
-
+    if (strcmp(operation, "add") == 0) {
+        result = firstnumber + secondnumber;
+        printf("%d + %d = %d\n",firstnumber,secondnumber, result);
+    }
     return 0;
 }
