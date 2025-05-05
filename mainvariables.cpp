@@ -17,6 +17,10 @@ int main(int argc, char *argv[]) {
     if (strcmp(operation, "add") == 0) {
         result = firstnumber + secondnumber;
         printf("%d + %d = %d\n",firstnumber,secondnumber, result);
+    }else if (strcmp(operation, "sub") == 0) {
+        result = firstnumber - secondnumber;
+        printf("%d - %d = %d\n",firstnumber,secondnumber, result);
+
     }
     return 0;
 }
