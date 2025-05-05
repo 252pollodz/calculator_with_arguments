@@ -24,6 +24,14 @@ int main(int argc, char *argv[]) {
     }else if (strcmp(operation, "multiply") == 0) {
         result = firstnumber * secondnumber;
         printf("%d * %d = %d\n",firstnumber,secondnumber, result);
+    }else if (strcmp(operation, "divide") == 0) {
+        if(secondnumber == 0) {
+            printf("Nie mozna dzielic przez 0!!!");
+            exit(1);
+        }else {
+            result = firstnumber / secondnumber;
+            printf("%d / %d = %d\n",firstnumber,secondnumber, result);
+        }
     }
     return 0;
 }
